@@ -1,0 +1,21 @@
+<h1> auteurs </h1>
+
+
+<table>
+
+
+    <tr>
+                <th>Username</th>
+                <th>Image</th>
+                <th>Email</th>
+                <th>Nombre de livres</th>
+     </tr>
+            {% for author in author %}
+                <tr>
+                    <td>{{ author.username  }}</td>
+                    <td><img src={{ author.picture }} width="100" /></td>
+                    <td>{{ author.email }}</td>
+                    <td>{{ author.nb_books }}</td>
+                    
+                </tr>
+/table>

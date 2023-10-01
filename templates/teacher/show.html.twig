@@ -1,0 +1,35 @@
+<h1> emma </h1>
+{{t}}
+
+{% if tt is empty %}
+<p> no element </p>
+{%else%}
+
+<table>
+<tr>
+<td> id </td>
+<td> nom </td>
+<td> nombre de classe </td>
+
+</tr>
+
+{% for teacher in tt %} // for
+<tr>
+<td> {{teacher.id}} </td>
+<td> {{teacher.name|upper}} </td>
+<td> {{teacher.nb_class }} </td>
+
+</tr>
+{%endfor%}
+
+
+</table>
+{% endif %}
+
+{#{% set name='test' %}
+<a herf="{{path('show_teacher', {n})}}"> vers la page d'acceuil</a>
+
+<img src="/image/capture.png"> // image
+
+<script scr="/js/file.js"></script> // fichier java script
+<link herf="/css/file.css"> // ficher css#}
